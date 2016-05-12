@@ -10,12 +10,17 @@ Bundle-Description: 				\
 	\
 	${warning;Please update this Bundle-Description in tech.ghp.iot.domotica.circuit.provider/bnd.bnd}
 
-Private-Package:  \
-	tech.ghp.iot.domotica.circuit.provider
+Private-Package: \
+	tech.ghp.iot.domotica.circuit.provider,\
+	tech.ghp.iot.domotica.circuit.command
 	
 -buildpath: \
 	osgi.enroute.base.api;version=1.0,\
-	tech.ghp.iot.domotica.circuit.api;version=latest
+	tech.ghp.iot.domotica.circuit.api;version=latest,\
+	osgi.enroute.logger.simple.provider,\
+	osgi.enroute.web.simple.provider,\
+	osgi.enroute.iot.circuit.provider,\
+	osgi.enroute.iot.pi.provider
 	
 -testpath: \
 	osgi.enroute.junit.wrapper;version=4.12
@@ -27,5 +32,17 @@ Private-Package:  \
 	osgi.identity;filter:='(osgi.identity=tech.ghp.iot.domotica.circuit.provider)'
 	
 -runbundles: \
-	${error;Resolve first}
+	org.apache.felix.configadmin;version='[1.8.6,1.8.7)',\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	org.apache.felix.scr;version='[2.0.0,2.0.1)',\
+	org.eclipse.equinox.event;version='[1.3.100,1.3.101)',\
+	org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)',\
+	org.osgi.service.event;version='[1.3.1,1.3.2)',\
+	org.osgi.service.metatype;version='[1.3.0,1.3.1)',\
+	osgi.enroute.dto.bndlib.provider;version='[1.0.0,1.0.1)',\
+	osgi.enroute.iot.circuit.provider;version='[2.0.1,2.0.2)',\
+	osgi.enroute.logger.simple.provider;version='[1.1.1,1.1.2)',\
+	osgi.enroute.scheduler.simple.provider;version='[1.1.1,1.1.2)',\
+	osgi.promise;version='[6.0.0,6.0.1)',\
+	tech.ghp.iot.domotica.circuit.provider;version=snapshot
 Export-Package: tech.ghp.iot.domotica.circuit.api

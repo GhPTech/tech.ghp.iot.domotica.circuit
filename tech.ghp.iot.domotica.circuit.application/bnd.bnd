@@ -10,8 +10,7 @@ Bundle-Description: \
 	\
 	${warning;Please update this Bundle-Description in tech.ghp.iot.domotica.circuit.application/bnd.bnd}
 
-Private-Package:  \
-	tech.ghp.iot.domotica.circuit.application
+Private-Package: tech.ghp.iot.domotica.circuit.application
 
 EnRoute-Application: 	tech.ghp.iot.domotica.circuit
 JPM-Command:			circuit
@@ -28,3 +27,4 @@ JPM-Command:			circuit
 	
 -testpath: \
 	osgi.enroute.junit.wrapper;version=4.12
+Export-Package: tech.ghp.iot.domotica.circuit.api

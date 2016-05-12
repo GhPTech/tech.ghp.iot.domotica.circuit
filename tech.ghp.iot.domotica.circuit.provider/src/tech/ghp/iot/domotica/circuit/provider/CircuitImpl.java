@@ -9,8 +9,8 @@ import tech.ghp.iot.domotica.circuit.api.Circuit;
  */
 @Component(name = "tech.ghp.iot.domotica.circuit")
 public class CircuitImpl implements Circuit{
-		public String upper(String input){
+		
+	public String upper(String input){
 			return input.toUpperCase();
 		}
-
 }

@@ -7,7 +7,7 @@ The application is based on [OSGi enRoute IoT tutorial][7]. Its purpose is to co
 
 The chip [BCM2835][9] controls and gets input from hardware. The pins of this chip are assigned and registered with the [Pi4J GpioController][11]. The bundle [OSGi enRoute][11] bundle *osgi.enroute.iot.pi.provider* (a version of the [Pi4j][10] library) is employed for this purpose.
 
-Furthermore, the bundle [osgi.enroute.iot.circuit.provider][12] allows assignment of the GPIO pins via the *Configuration Admin* of *Webconsole*. Connections between the assigned hardware components can be realised with this bundle.
+Furthermore, the bundle [osgi.enroute.iot.circuit.provider][13] allows assignment of the GPIO pins via the *Configuration Admin* of *Webconsole*. Connections between the assigned hardware components can be realised with this bundle.
 
 [1]:  http://osgi.org/
 [2]:  https://eclipse.org/
@@ -20,5 +20,5 @@ Furthermore, the bundle [osgi.enroute.iot.circuit.provider][12] allows assignmen
 [9]:  https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2835/README.md
 [10]: http://pi4j.com
 [11]: http://pi4j.com/example/control.html
-[11]: http://enroute.osgi.org
-[12]: http://enroute.osgi.org/services/osgi.enroute.io.circuit.api.html
+[12]: http://enroute.osgi.org
+[13]: http://enroute.osgi.org/services/osgi.enroute.io.circuit.api.html
